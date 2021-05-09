@@ -4,17 +4,21 @@ This is a template used for exploring the Haskell ecosystem using Nix.
 
 ** Preparing the project
 
-First clone/copy this repository;
+First clone this repository.
 
-- You might want to update the nixpkgs version on the files [`release.nix`](./release.nix) and [`shell.nix`](./shell.nix)
+#+BEGIN_QUOTE
+You might want to update the nixpkgs version on the files [[./release.nix][`release.nix`]] and [[shell.nix][`shell.nix`]]
+#+END_QUOTE
 
 Then initialize a cabal project:
 
-``` sh
+#+begin_src shell :exports code
 nix-shell --pure -p ghc cabal-install --run "cabal init"
-```
+#+end_src
 
-- In order to have the repl working, update the Makefile, on the `repl` part, putting the name of the project in place of the string `lib-name-here` 
+#+BEGIN_QUOTE
+In order to have the repl working, update the Makefile, on the `repl` part, putting the name of the project in place of the string `lib-name-here`
+#+END_QUOTE
 
 Now you can use the following commands on your terminal:
 
