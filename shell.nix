@@ -4,7 +4,7 @@ let
 
   project = import ./release.nix;
 in
-pkgs.stenv.mkDerivation {
+pkgs.stdenv.mkDerivation {
   name = "shell";
   buildInputs = project.env.nativeBuildInputs ++ [
     haskellPackages.cabal-install
