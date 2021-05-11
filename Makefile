@@ -5,7 +5,7 @@ build:
 	nix-build release.nix
 
 run: build
-	result/bin/haskell-music
+	result/bin/lib-name-here
 
 repl:
 	nix-shell -pure shell.nix --run "cabal repl lib:lib-name-here"
